@@ -82,9 +82,10 @@ const Calendar = () => {
               trigger={['click']}
             >
               <a onClick={e => e.preventDefault()}>
-                <Space style={{ backgroundColor: getMonthColors()[day] }}>
+                <Space className='hover:cursor-pointer' style={{ backgroundColor: getMonthColors()[day],
+                width:"30px"}}>
                   {day + 1}
-                  <DownOutlined />
+                  {/* <DownOutlined /> */}
                 </Space>
               </a>
             </Dropdown>
